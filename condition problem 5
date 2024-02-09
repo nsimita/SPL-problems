@@ -1,0 +1,15 @@
+#include <stdio.h>
+//problem 5 
+
+int main() {
+  int a;
+  scanf("%d",&a);
+  double x = log2(a);
+  if(x==(int) x){
+      printf("Yes");
+  }
+  else {
+      printf("No");
+  }
+    return 0;
+}
