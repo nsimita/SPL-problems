@@ -1,0 +1,16 @@
+#include<stdio.h>
+//problem-7
+int main()
+{
+    int x= -150;
+    float y= 123.125;
+    int num1 = y;
+    float num2=x;
+    printf("Assignment:%.6f assigned to an int produces %d\n",y,num1);
+    printf("Assignment:%d assigned to a float produces %.6f\n",x,num2);
+    float a = (float) x;
+    int b = (int) y;
+    printf("Type Casting: (float) %d produces %f\n",x,a);
+    printf("Type Casting: (int) %f produces %d\n",y,b);
+    return 0;
+}
