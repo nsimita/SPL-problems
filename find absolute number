@@ -1,0 +1,10 @@
+#include <stdio.h>
+//find the absolute number
+int main(){
+int a,x;
+scanf("%d",&a);
+x= a>0? a:-a;
+printf("%d",x);
+
+    return 0;
+}
