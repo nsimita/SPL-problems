@@ -3,10 +3,11 @@
 int main() {
     float a;
     scanf("%f",&a);
+   float d = (a>0? a: -a );
     int b = (int) a+1;
     int c = (int) a;
     
-    printf("%d\n %d\n %f\n",b,c,a);
+    printf("%d\n %d\n %f\n",b,c,d);
 
     return 0;
 }
