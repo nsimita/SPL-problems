@@ -1,0 +1,16 @@
+//problem 2
+#include <stdio.h>
+
+int main() {
+    int n,j;
+    scanf("%d",&n);
+     for (int i= 1, j=1; i <= n ; i++,j+=2){
+       
+        
+             printf("%d ,",j);
+         }
+          
+     
+
+    return 0;
+}
