@@ -1,0 +1,17 @@
+#include <stdio.h>
+//problem 15
+int main() {
+    int b, e;
+    long double result = 1.0;
+    
+    scanf("%d", &b);
+   
+    scanf("%d", &e);
+
+    while (e != 0) {
+        result *= b;
+        --e;
+    }
+    printf("Answer = %.0Lf", result);
+    return 0;
+}
