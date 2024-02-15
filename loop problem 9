@@ -1,0 +1,36 @@
+#include <stdio.h>
+//problem 9
+int main()
+{
+    int i = 0, n, id, mark, totalmark = 0;
+    
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        printf("Mark:");
+        for (i = 1; i <= 5; i++)
+        {
+            scanf("%d", &mark);
+            totalmark = totalmark + mark;
+        }
+        printf("Total Mark=%d\n", totalmark);
+        if (totalmark >= 90)
+        {
+            printf("Grade= A\n");
+        }
+        else if (totalmark <= 90 && totalmark >= 70)
+        {
+            printf("Grade= B\n");
+        }
+        else if (totalmark <= 70 && totalmark >= 50)
+        {
+            printf("Grade= C\n");
+        }
+        else
+        {
+            printf("Grade= F\n");
+        }
+    }
+
+    return 0;
+}
