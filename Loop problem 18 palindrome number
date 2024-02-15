@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+  int n, rev = 0, remainder, org;
+     
+    scanf("%d", &n);
+    org= n;
+  
+    while (n != 0) {
+        remainder = n % 10;
+        rev  = rev  * 10 + remainder;
+        n /= 10;
+    }
+ 
+    if (org == rev )
+        printf("Yes", org);
+    else
+        printf("No", org);
+
+    return 0;
+}
