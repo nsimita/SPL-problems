@@ -1,23 +1,22 @@
 #include <stdio.h>
 //problem 7
-int main()
-{
-    int count=1;
-    char g_ch,ch='A';
+int main(){
+    int i=1;
+    char g,ch;
+     
     while(1)
     {
-        scanf(" %c",&g_ch);
-        if(g_ch!=ch)
+        scanf(" %c",&g );
+        if(g !='A')
         {
-          printf("Input %d: %c\n",count,g_ch);  
+          printf("Input %d: %c\n",i,g );  
         }
         else
         {
             break;
         }
-        count++;
+        i++;
     }
 
     return 0;
 }
-
