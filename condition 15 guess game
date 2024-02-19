@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main() {
+	int a, b;
+	scanf("%d", &b);
+	scanf("%d",&a);
+	if (a == b) {
+		
+		printf("win\n");
+	}
+	else {
+		printf("wrong, two chance left\n");
+		scanf("%d", &a);
+		if (a == b) {
+			
+			printf("win\n");
+		}
+		else {
+			printf("wrong, one chance left\n");
+			scanf("%d", &a);
+			if (a == b) {
+				
+				printf("win\n");
+			}
+			else {
+				printf("wrong, no chance left\n");
+				printf("lost the game\n");
+			}
+		}
+	}
+	return 0;
+}
