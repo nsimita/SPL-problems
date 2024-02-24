@@ -1,14 +1,13 @@
 #include <stdio.h>
 //problem 8
 int main() {
-   int i, j, rows;
-   printf("Enter the number of rows: ");
-   scanf("%d", &rows);
-   for (i = rows; i >= 1; --i) {
-      for (j = 1; j <= i; ++j) {
-         printf("* ", j);
-      }
-      printf("\n");
+   int i,j,n;
+   scanf("%d",&n);
+   for(i=1; i<=n; i++){
+       for(j=1; j<=n+1-i; j++){
+           printf("*");
+       }
+       printf("\n");
    }
-   return 0;
+    return 0;
 }
