@@ -1,0 +1,16 @@
+#include <stdio.h>
+//prob 2
+int main() {
+    int num[10000];
+    int n,i, sum=0 ;
+    scanf("%d",&n);
+    for(i=0; i<=n-1; i++){
+        scanf("%d",&num[i]);
+    }
+    for(i=0;i<=n-1; i++){
+       sum=sum+num[i];
+    }
+    printf("%d", sum);
+
+    return 0;
+}
