@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int m1[3][3],m2[3][13],r1,r2,c1,c2,i,j,k, sum=0 ,result[3][3];
+     
+     //taking input for first mat
+    
+    for(i=0; i<r1; i++){
+        for(j=0; j<c1;j++){
+            scanf("%d  ",&m1[i][j]);
+        }
+    }
+    //taking input for 2nd mat
+    
+    for(i=0; i<r2; i++){
+        for(j=0; j<c2;j++){
+            scanf("%d  ",&m2[i][j]);
+        }
+    }
+    //multiplying mat
+    for(i=0; i<r1;i++){
+        for(j=0;j<c2;j++){
+            for(k=0;k<c1;k++){
+              sum=sum+m1[i][k]*m2[k][j] ;
+            }
+        }
+         result[i][j]=sum;
+        sum=0;// making sum 0 for the next row col multiplication
+    }
+     for(i=0; i<r1; i++){
+        for(j=0; j<c2;j++){
+            printf("%d  ",result[i][j]);
+        }
+    }
+
+    return 0;
+}
