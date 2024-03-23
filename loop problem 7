@@ -1,22 +1,17 @@
-#include <stdio.h>
+ 
 //problem 7
+#include<stdio.h>
 int main(){
     int i=1;
-    char g,ch;
-     
-    while(1) // for inifinite loop 1 is given 
-    {
-        scanf(" %c",&g );
-        if(g !='A')
-        {
-          printf("Input %d: %c\n",i,g );  
-        }
-        else
-        {
-            break;
-        }
-        i++;
+char and;
+while (1){
+    scanf(" %c",&and);
+    if(and =='A'){
+        break ;
     }
-
-    return 0;
+    else
+        printf("input %d:%c\n",i,and);
+        i++;
+}
+return 0;
 }
