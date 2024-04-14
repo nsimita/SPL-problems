@@ -1,0 +1,29 @@
+#include <stdio.h>
+int prime(int num);
+int main() {
+   int i, n;
+   scanf("%d",&n);
+     prime(n);
+
+
+    return 0;
+}
+int prime(int num){
+  int flag = 1;
+   for(int i=2; i<num-1 ; i++)  {
+       if(num%i ==0){
+           flag = 0;
+           break;
+       }
+       //reason of using flag we want to check if the value of flag is unchanged or not. if it's unchanged then it's prime.
+   }
+       if(flag == 1)   {
+           printf("Prime");
+       }
+       else {
+           printf("Not prime");
+       }
+
+
+}
+
