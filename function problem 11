@@ -1,14 +1,14 @@
 #include <stdio.h>
-int prime(int num);
+int isprime(int num);
 int main() {
    int i, n;
    scanf("%d",&n);
-     prime(n);
+     isprime(n);
 
 
     return 0;
 }
-int prime(int num){
+int isprime(int num){
   int flag = 1;
    for(int i=2; i<num-1 ; i++)  {
        if(num%i ==0){
