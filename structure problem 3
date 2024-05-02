@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+typedef struct {
+    float x;
+    float y;
+} point;
+
+int main()
+{
+    point A, B;
+    scanf("%f %f", &A.x, &A.y);
+    
+    scanf("%f %f", &B.x, &B.y);
+    float distance;
+    distance = sqrt (pow((A.x-B.x),2)+ pow((A.y-B.y),2));
+    printf("The Distance is = %.2f", distance);
+
+    return 0;
+}
