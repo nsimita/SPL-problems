@@ -1,0 +1,41 @@
+#include <stdio.h>
+struct student {
+    char name [50];
+    int id;
+    float cgpa;
+};
+
+int main()
+{
+    
+   int n;
+   printf("enter student number: ");
+   scanf("%d",&n);
+     getchar();
+   struct student st[n];
+   int i;
+   for(i=0;i<n; i++){  
+       printf("enter name: \n");
+       gets(st[i].name);
+     
+
+       printf("Enter ID = \n");
+       scanf("%d",&st[i].id);
+          getchar(); 
+       printf("Enter CGPA = \n");
+       scanf("%f",&st[i].cgpa);
+          getchar(); 
+       
+ 
+   }
+   
+    for(i=0;i<n; i++){ 
+        printf("name: %s \n", st[i].name);
+        printf("  ID = %d \n",st[i].id);
+        printf("  CGPA = %.2f \n",st[i].cgpa);
+        
+   }
+
+
+    return 0;
+}
