@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+typedef struct {
+    float x, y;
+} complex;
+
+int main()
+{
+     complex n;
+     scanf("%f %f",&n.x,&n.y);
+     float mod= sqrt((pow((n.x),2))+(pow((n.y),2)));
+     float argu = atan2(n.y, n.x);
+     printf("Modulus = %.4f \n argument = %.4f",mod, argu);
+     
+ 
+    return 0;
+}
