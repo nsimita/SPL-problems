@@ -1,0 +1,19 @@
+#include <stdio.h>
+typedef struct {
+    float real;
+    float img;
+} complex;
+int main()
+{
+   complex c;
+   scanf("%f",&c.real);
+   scanf("%f",&c.img);
+   if(c.img<0){
+       printf("%.2f %.2fi",c.real, c.img);
+   }
+   else{
+       printf("%.2f %+.2fi",c.real,c.img);
+   }
+
+    return 0;
+}
