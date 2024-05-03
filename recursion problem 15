@@ -1,0 +1,32 @@
+#include <stdio.h>
+void even(int x,int y){
+    if(x>y){
+        return;
+    }
+    if(x%2==0){
+        printf("%d \n",x);
+    }
+    even(x+1, y);
+}
+void odd(int x, int y){
+if(x>y){
+    return;
+    }
+    if(x%2!=0){
+        printf("%d \n",x);
+    }
+    odd(x+1, y);
+}
+ 
+int main()
+{
+   int a, b;
+   scanf("%d %d", &a, &b);
+   printf("even : \n");
+   even (a,b);
+    printf("odd : \n");
+   odd (a,b);
+      
+ 
+    return 0;
+}
